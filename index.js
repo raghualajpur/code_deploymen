@@ -3,7 +3,9 @@ const app=express();
 const port=process.env.PORT || 5010;
 
 app.get("/",function(req,res){
-    res.send("Hi Raghu");
+    //res.send("Hi Raghu");
+    res.sendFile(__dirname+"/body.html")
+
 })
 
 
